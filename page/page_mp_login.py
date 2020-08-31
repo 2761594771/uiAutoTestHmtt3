@@ -1,3 +1,4 @@
+from time import sleep
 
 from base.base import Base
 import page
@@ -5,17 +6,24 @@ import page
 class PageMpLogin(Base):
 
     #  输入用户名 方法 封装
-    def page_input_username(self):
-        self.page.mp_username
+    def page_input_username(self,username):
+        self.base_input(page.mp_username,username)
     # 输入验证码方法 封装
     def page_input_code(self,code):
-        self.base_input(code)
+        self.base_input(page.mp_code,code)
 
     # 点击 登录按钮封装
-    def page_click_login_btn(self,loc):
-        self.base_click(loc)
+    def page_click_login_btn(self):
+        self.base_click(page.mp_login_btn)
 
     # 获取昵称 封装
     def page_get_nickname(self):
-        pass
+        return  self.base_get_text(page.mp_nickname)
+
+    # 登录流程方法组合
+    def page_mp_login(self,username,code):
+        self.page_input_username(username)
+        self.page_input_code(code)
+        sleep(1)
+        self.page_click_login_btn()
 
