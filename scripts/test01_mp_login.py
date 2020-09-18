@@ -1,8 +1,9 @@
+
 from page.page_in import PageIn
 from tools.get_driver import GetDriver
 import page
 class TestMpLogin:
-    #初始化
+     #初始化
     def setup_class(self):
         #获取driver
         driver = GetDriver.get_web_driver(page.mp_url)
