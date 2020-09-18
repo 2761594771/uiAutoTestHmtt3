@@ -1,7 +1,6 @@
 from page.page_in import PageIn
 from tools.get_driver import GetDriver
 import page
-
 class TestMpLogin:
     #初始化
     def setup_class(self):
