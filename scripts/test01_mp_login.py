@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+
 from page.page_in import PageIn
 from tools.get_driver import GetDriver
 import page
