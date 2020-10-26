@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 class GetDriver:
@@ -11,8 +12,12 @@ class GetDriver:
 
         # 判断driver是否为空
         if cls.__web_driver is None:
+            # 配置chrome无头模式
+            chrome_options = Options()
+            chrome_options.add_argument('--headless')
+            chrome_options.add_argument('--disable-gpu')
             # 获取浏览器
-            cls.__web_driver = webdriver.Chrome()
+            cls.__web_driver = webdriver.Chrome(options=chrome_options)
             # 最大化浏览器
             cls.__web_driver.maximize_window()
             # 打开url
