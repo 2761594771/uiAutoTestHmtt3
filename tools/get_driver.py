@@ -5,11 +5,9 @@ from selenium.webdriver.chrome.options import Options
 class GetDriver:
     # 声明变量
     __web_driver = None
-
     # 获取web页面的driver
     @classmethod
     def get_web_driver(cls,url):
-
         # 判断driver是否为空
         if cls.__web_driver is None:
             # 配置chrome无头模式

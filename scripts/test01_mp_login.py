@@ -1,5 +1,7 @@
+import pytest
 
 from page.page_in import PageIn
+from tools.read_yaml import read_yaml
 from tools.get_driver import GetDriver
 import page
 class TestMpLogin:
@@ -16,10 +18,22 @@ class TestMpLogin:
         GetDriver.quit_web_driver()
 
     # 测试业务方法
-    def test_mp_login(self,username="13812345678",code="246810"):
+    @pytest.mark.parametrize("username,code,expect_result", read_yaml("mp_login.yaml"))
+    def test_mp_login(self, username, code, expect_result):
+        print(username+"---------"+code)
         # 调用登录业务方法
-         self.mp.page_mp_login(username,code)
-        #断言
-         print("昵称为 ",self.mp.page_get_nickname())
+        self.mp.page_mp_login(username, code)
+        try:
+            # 断言
+            assert expect_result == self.mp.page_get_nickname()
+            print(self.mp.page_get_nickname())
+        except Exception as e:
+            # 打印异常
+            print("异常是：",e)
+            # 截图
+            self.mp.base_get_image()
+            # 抛出异常
+            raise
+
 
 

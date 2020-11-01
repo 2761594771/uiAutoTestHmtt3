@@ -1,5 +1,4 @@
-
-
+import allure
 from selenium.webdriver.support.wait import WebDriverWait
 
 
@@ -34,3 +33,15 @@ class Base:
     # 获取  元素文本封装
     def base_get_text(self,loc):
         return self.base_find(loc).text
+
+    # 截图方法
+    def base_get_image(self):
+         self.driver.get_screenshot_as_file("./image/err.png")
+         # 调用图片写入报告方法
+         self.__base_write_img()
+
+    # 将图片写入报告的方法
+    def __base_write_img(self):
+         # 获取图片写入文件流
+            with open("./image/err.png","rb") as f:
+                allure.attach("错误原因：",f.read(),allure.attach_type.PNG)
