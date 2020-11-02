@@ -1,0 +1,35 @@
+
+2020-11-02 23:50:36,133 INFO [base.py(__init__:10)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="f07236a436aba9addca5af4cb0a3be19")>
+2020-11-02 23:50:36,136 INFO [page_mp_login.py(page_mp_login:27)] - 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+2020-11-02 23:50:36,137 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+2020-11-02 23:50:36,222 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+2020-11-02 23:50:36,222 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+2020-11-02 23:50:36,365 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='验证码']")元素
+2020-11-02 23:50:36,429 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+2020-11-02 23:50:36,429 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+2020-11-02 23:50:37,534 INFO [base.py(base_click:40)] - 正在对('css selector', '.el-button--primary')元素执行点击操作
+2020-11-02 23:50:37,534 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.el-button--primary')元素
+2020-11-02 23:50:37,605 INFO [base.py(base_get_text:44)] - 正在对('css selector', '.user-name')元素执行获取文本操作
+2020-11-02 23:50:37,605 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.user-name')元素
+2020-11-02 23:50:38,205 ERROR [test01_mp_login.py(test_mp_login:34)] - 断言出错，错误信息:assert 'Xeo' == 'Xeon'
+  - Xeon
+  ?    -
+  + Xeo
+2020-11-02 23:50:38,500 ERROR [base.py(base_get_image:51)] - 断言出错，正在将错误图片写入allure报告
+2020-11-02 23:54:54,644 INFO [base.py(__init__:10)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="cf46b146727b5d8a3714443f4e2c2d79")>
+2020-11-02 23:54:54,647 INFO [page_mp_login.py(page_mp_login:27)] - 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+2020-11-02 23:54:54,647 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+2020-11-02 23:54:54,765 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+2020-11-02 23:54:54,765 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+2020-11-02 23:54:54,944 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='验证码']")元素
+2020-11-02 23:54:55,021 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+2020-11-02 23:54:55,021 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+2020-11-02 23:54:56,191 INFO [base.py(base_click:40)] - 正在对('css selector', '.el-button--primary')元素执行点击操作
+2020-11-02 23:54:56,191 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.el-button--primary')元素
+2020-11-02 23:54:56,275 INFO [base.py(base_get_text:44)] - 正在对('css selector', '.user-name')元素执行获取文本操作
+2020-11-02 23:54:56,275 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.user-name')元素
+2020-11-02 23:55:17,391 ERROR [test01_mp_login.py(test_mp_login:34)] - 断言出错，错误信息:assert 'Xeo' == 'Xeon'
+  - Xeon
+  ?    -
+  + Xeo
+2020-11-02 23:55:17,686 ERROR [base.py(base_get_image:51)] - 断言出错，正在将错误图片写入allure报告

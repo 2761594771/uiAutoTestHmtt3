@@ -2,7 +2,9 @@ from time import sleep
 
 from base.base import Base
 import page
+from tools.get_log import GetLog
 
+log = GetLog().get_logger()
 class PageMpLogin(Base):
 
     #  输入用户名 方法 封装
@@ -22,6 +24,7 @@ class PageMpLogin(Base):
 
     # 登录流程方法组合
     def page_mp_login(self,username,code):
+        log.info("正在调用自媒体登录业务方法，用户名：{},密码：{}".format(username,code))
         self.page_input_username(username)
         self.page_input_code(code)
         sleep(1)
