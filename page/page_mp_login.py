@@ -2,10 +2,11 @@ from time import sleep
 
 from base.base import Base
 import page
+from base.web_base import WebBase
 from tools.get_log import GetLog
 
 log = GetLog().get_logger()
-class PageMpLogin(Base):
+class PageMpLogin(WebBase):
 
     #  输入用户名 方法 封装
     def page_input_username(self,username):
