@@ -15,5 +15,5 @@ class WebBase(Base):
         # 暂停
         sleep(1)
         # 点击包含显示文本的元素
-        loc2 = By.XPATH, "//*[text()='{}']".format(click_text)
-        self.base_click(loc2)
+        loc = By.XPATH, "//*[text()='{}']".format(click_text)
+        self.base_click(loc)

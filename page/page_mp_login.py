@@ -6,6 +6,7 @@ from base.web_base import WebBase
 from tools.get_log import GetLog
 
 log = GetLog().get_logger()
+
 class PageMpLogin(WebBase):
 
     #  输入用户名 方法 封装
@@ -31,3 +32,9 @@ class PageMpLogin(WebBase):
         sleep(1)
         self.page_click_login_btn()
 
+    def page_mp_login_sucess(self,username= "13812345678",code="246810"):
+        log.info("正在调用自媒体登录业务方法，用户名：{},密码：{}".format(username,code))
+        self.page_input_username(username)
+        self.page_input_code(code)
+        sleep(1)
+        self.page_click_login_btn()

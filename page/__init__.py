@@ -19,13 +19,18 @@ mp_url = "http://ttmp.research.itcast.cn/#/login"
 
 '''以下是黑马头条web项目，内容管理模块 元素配置信息'''
 # 内容管理
-mp_content_manage = By.XPATH, "//span[text()= '内容管理']"
+mp_content_manage = By.XPATH, "//span[text()= '内容管理']/.."
 # 发布文章
 mp_publish_article = By.XPATH, "//*[contains(text(), '发布文章')]"
 # 文章title
 mp_title = By.CSS_SELECTOR, "[placeholder='文章名称' ]"
 # 文章内容
+mp_content = By.CSS_SELECTOR, "#tinymce"
 # iframe
+mp_iframe = By.CSS_SELECTOR, "#publishTinymce_ifr"
 # 封面
+mp_cover = By.XPATH, "//*[text() = '自动']"
 # 发表按钮
+mp_submit = By.XPATH, "//*[text()='发表']/.."
 # 结果
+mp_result = By.XPATH, "//*[contains(text(),'新增文章成功')]"
