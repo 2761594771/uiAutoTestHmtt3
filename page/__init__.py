@@ -15,6 +15,7 @@ mp_nickname = (By.CSS_SELECTOR,".user-name")
 
 '''以下为黑马头条、后台管理系统url'''
 mp_url = "http://ttmp.research.itcast.cn/#/login"
+msi_url= "http://ttmis.research.itcast.cn/#"
 
 
 '''以下是黑马头条web项目，内容管理模块 元素配置信息'''
@@ -34,3 +35,9 @@ mp_cover = By.XPATH, "//*[text() = '自动']"
 mp_submit = By.XPATH, "//*[text()='发表']/.."
 # 结果
 mp_result = By.XPATH, "//*[contains(text(),'新增文章成功')]"
+
+"""以下是后台管理系统"""
+msi_username = By.CSS_SELECTOR, "[placeholder = '用户名']"
+msi_pwd = By.CSS_SELECTOR, "[placeholder = '密码']"
+msi_login_btn = By.ID, "#inp1"
+msi_nickname = By.CSS_SELECTOR, ".user_info"

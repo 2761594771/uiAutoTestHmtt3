@@ -12,18 +12,18 @@ class Base:
         self.driver = driver
 
     # 查找元素  方法封装
-    def base_find(self,loc,timeout=30,poll=0.5):
-        '''
-
-        :param loc:
-        :param timeout:
-        :param poll:
-        :return:
-        '''
+    def base_find(self,loc, timeout=60, poll=0.5):
+        """
+            :param loc:
+            :param timeout:
+            :param poll:
+            :return:
+        """
         log.info("正在查找:{}元素".format(loc))
+
         return (WebDriverWait(self.driver,
                               timeout=timeout,
-                              poll_frequency=poll).until(lambda x :x.find_element(*loc)))
+                              poll_frequency=poll).until(lambda x: x.find_element(*loc)))
     # 输入  方法封装
     def base_input(self,loc,value):
         # 获取元素

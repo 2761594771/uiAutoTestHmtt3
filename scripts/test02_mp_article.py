@@ -22,4 +22,4 @@ class TestMpArticle:
         # 调用发布文章业务方法
         self.article.page_mp_article(title, content)
         # 查看断言
-        # print("发布文章结果为：",self.article.page_get_info())
+        print("发布文章结果为：",self.article.page_get_info())
