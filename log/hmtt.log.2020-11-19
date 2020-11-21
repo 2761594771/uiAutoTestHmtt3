@@ -1,0 +1,53 @@
+2020-11-19 14:42:19,946 INFO [base.py(__init__:10)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="1e4b0b51bf929eb34b8cc3adcbd013d0")>
+2020-11-19 14:42:19,952 INFO [page_mp_login.py(page_mp_login:29)] - 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+2020-11-19 14:42:19,953 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+2020-11-19 14:42:20,046 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+2020-11-19 14:42:20,046 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+2020-11-19 14:42:20,182 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='验证码']")元素
+2020-11-19 14:42:20,247 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+2020-11-19 14:42:20,247 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+2020-11-19 14:42:21,375 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.el-button--primary')元素
+2020-11-19 14:42:21,446 INFO [base.py(base_click:41)] - 正在对('css selector', '.el-button--primary')元素执行点击操作
+2020-11-19 14:42:21,447 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.user-name')元素
+2020-11-19 14:42:22,001 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.user-name')元素
+2020-11-19 14:42:31,830 INFO [base.py(__init__:10)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="bd043cf5c3771fa35500998f1c66160a")>
+2020-11-19 14:42:31,831 INFO [page_mp_login.py(page_mp_login_sucess:36)] - 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+2020-11-19 14:42:31,831 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+2020-11-19 14:42:31,951 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+2020-11-19 14:42:31,951 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+2020-11-19 14:42:32,154 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='验证码']")元素
+2020-11-19 14:42:32,235 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+2020-11-19 14:42:32,235 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+2020-11-19 14:42:33,367 INFO [base.py(base_find:22)] - 正在查找:('css selector', '.el-button--primary')元素
+2020-11-19 14:42:33,435 INFO [base.py(base_click:41)] - 正在对('css selector', '.el-button--primary')元素执行点击操作
+2020-11-19 14:42:33,435 INFO [base.py(__init__:10)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="bd043cf5c3771fa35500998f1c66160a")>
+2020-11-19 14:42:34,437 INFO [base.py(base_find:22)] - 正在查找:('xpath', "//*[text()= '内容管理']/..")元素
+2020-11-19 14:42:34,511 INFO [base.py(base_click:41)] - 正在对('xpath', "//*[text()= '内容管理']/..")元素执行点击操作
+2020-11-19 14:42:35,511 INFO [base.py(base_find:22)] - 正在查找:('xpath', "//*[contains(text(), '发布文章')]")元素
+2020-11-19 14:42:35,610 INFO [base.py(base_click:41)] - 正在对('xpath', "//*[contains(text(), '发布文章')]")元素执行点击操作
+2020-11-19 14:42:36,612 INFO [base.py(base_find:22)] - 正在查找:('css selector', "[placeholder='文章名称' ]")元素
+2020-11-19 14:42:36,664 INFO [base.py(base_input:33)] - 正在对('css selector', "[placeholder='文章名称' ]")元素执行清空操作
+2020-11-19 14:42:36,664 INFO [base.py(base_input:35)] - 正在对('css selector', "[placeholder='文章名称' ]")元素执行输入：test--demo1 操作
+2020-11-19 14:42:36,875 INFO [base.py(base_find:22)] - 正在查找:('css selector', '#publishTinymce_ifr')元素
+2020-11-19 14:42:37,915 INFO [base.py(base_find:22)] - 正在查找:('css selector', '#tinymce')元素
+2020-11-19 14:42:37,957 INFO [base.py(base_input:33)] - 正在对('css selector', '#tinymce')元素执行清空操作
+2020-11-19 14:42:37,957 INFO [base.py(base_input:35)] - 正在对('css selector', '#tinymce')元素执行输入：黑马自媒体平台文章发布测试1 操作
+2020-11-19 14:42:39,189 INFO [base.py(base_find:22)] - 正在查找:('xpath', "//*[text() = '自动']")元素
+2020-11-19 14:42:39,264 INFO [base.py(base_click:41)] - 正在对('xpath', "//*[text() = '自动']")元素执行点击操作
+2020-11-19 14:42:39,265 INFO [base.py(base_find:22)] - 正在查找:('css selector', " [placeholder = '请选择'] ")元素
+2020-11-19 14:42:39,377 INFO [base.py(base_click:41)] - 正在对('css selector', " [placeholder = '请选择'] ")元素执行点击操作
+2020-11-19 14:42:40,378 INFO [base.py(base_find:22)] - 正在查找:('xpath', "//*[text()='数据库']")元素
+2020-11-19 15:39:46,049 INFO [base.py(__init__:11)] - 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="2fa21478b2deb70e7adf656c8344e206")>
+2020-11-19 15:39:46,052 INFO [page_mp_login.py(page_mp_login:29)] - 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+2020-11-19 15:39:46,052 INFO [base.py(base_find:23)] - 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+2020-11-19 15:39:46,162 INFO [base.py(base_input:34)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+2020-11-19 15:39:46,163 INFO [base.py(base_input:36)] - 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+2020-11-19 15:39:46,306 INFO [base.py(base_find:23)] - 正在查找:('css selector', "[placeholder='验证码']")元素
+2020-11-19 15:39:46,388 INFO [base.py(base_input:34)] - 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+2020-11-19 15:39:46,388 INFO [base.py(base_input:36)] - 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+2020-11-19 15:39:47,521 INFO [base.py(base_find:23)] - 正在查找:('css selector', '.el-button--primary')元素
+2020-11-19 15:39:47,829 INFO [base.py(base_click:43)] - 正在对('css selector', '.el-button--primary')元素执行点击操作
+2020-11-19 15:39:47,829 INFO [base.py(base_find:23)] - 正在查找:('css selector', '.user-name')元素
+2020-11-19 15:40:18,152 ERROR [test01_mp_login.py(test_mp_login:34)] - 断言出错，错误信息:Message: 
+
+2020-11-19 15:40:18,495 ERROR [base.py(base_get_image:53)] - 断言出错，正在将错误图片写入allure报告

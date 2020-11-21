@@ -1,0 +1,27 @@
+[32mINFO    [0m root:base.py:10 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="bd043cf5c3771fa35500998f1c66160a")>
+[32mINFO    [0m root:page_mp_login.py:36 正在调用自媒体登录业务方法，用户名：13812345678,密码：246810
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', "[placeholder='请输入手机号']")元素
+[32mINFO    [0m root:base.py:33 正在对('css selector', "[placeholder='请输入手机号']")元素执行清空操作
+[32mINFO    [0m root:base.py:35 正在对('css selector', "[placeholder='请输入手机号']")元素执行输入：13812345678 操作
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', "[placeholder='验证码']")元素
+[32mINFO    [0m root:base.py:33 正在对('css selector', "[placeholder='验证码']")元素执行清空操作
+[32mINFO    [0m root:base.py:35 正在对('css selector', "[placeholder='验证码']")元素执行输入：246810 操作
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', '.el-button--primary')元素
+[32mINFO    [0m root:base.py:41 正在对('css selector', '.el-button--primary')元素执行点击操作
+[32mINFO    [0m root:base.py:10 正在初始化driver:<selenium.webdriver.chrome.webdriver.WebDriver (session="bd043cf5c3771fa35500998f1c66160a")>
+[32mINFO    [0m root:base.py:22 正在查找:('xpath', "//*[text()= '内容管理']/..")元素
+[32mINFO    [0m root:base.py:41 正在对('xpath', "//*[text()= '内容管理']/..")元素执行点击操作
+[32mINFO    [0m root:base.py:22 正在查找:('xpath', "//*[contains(text(), '发布文章')]")元素
+[32mINFO    [0m root:base.py:41 正在对('xpath', "//*[contains(text(), '发布文章')]")元素执行点击操作
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', "[placeholder='文章名称' ]")元素
+[32mINFO    [0m root:base.py:33 正在对('css selector', "[placeholder='文章名称' ]")元素执行清空操作
+[32mINFO    [0m root:base.py:35 正在对('css selector', "[placeholder='文章名称' ]")元素执行输入：test--demo1 操作
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', '#publishTinymce_ifr')元素
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', '#tinymce')元素
+[32mINFO    [0m root:base.py:33 正在对('css selector', '#tinymce')元素执行清空操作
+[32mINFO    [0m root:base.py:35 正在对('css selector', '#tinymce')元素执行输入：黑马自媒体平台文章发布测试1 操作
+[32mINFO    [0m root:base.py:22 正在查找:('xpath', "//*[text() = '自动']")元素
+[32mINFO    [0m root:base.py:41 正在对('xpath', "//*[text() = '自动']")元素执行点击操作
+[32mINFO    [0m root:base.py:22 正在查找:('css selector', " [placeholder = '请选择'] ")元素
+[32mINFO    [0m root:base.py:41 正在对('css selector', " [placeholder = '请选择'] ")元素执行点击操作
+[32mINFO    [0m root:base.py:22 正在查找:('xpath', "//*[text()='数据库']")元素

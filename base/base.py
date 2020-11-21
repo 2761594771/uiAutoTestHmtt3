@@ -1,4 +1,5 @@
 import allure
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 
 from tools.get_log import GetLog
@@ -37,12 +38,13 @@ class Base:
 
     # 点击  方法封装
     def base_click(self,loc):
+        ele = self.base_find(loc)
+        ActionChains(self.driver).move_to_element(ele).click().perform()
         log.info("正在对{}元素执行点击操作".format(loc))
-        self.base_find(loc).click()
     # 获取  元素文本封装
     def base_get_text(self,loc):
-        log.info("正在对{}元素执行获取文本操作".format(loc))
         return self.base_find(loc).text
+        log.info("正在对{}元素执行获取文本操作".format(loc))
 
     # 截图方法
     def base_get_image(self):

@@ -1,5 +1,4 @@
 from time import sleep
-
 import page
 from base.web_base import WebBase
 class PageMpArticle(WebBase):
